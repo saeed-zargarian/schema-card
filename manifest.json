@@ -1,0 +1,21 @@
+{
+  "name": "کارت‌های مقابله‌ای طرح‌واره",
+  "short_name": "کارت طرح‌واره",
+  "description": "برنامه ثبت و آرشیو کارت‌های مقابله‌ای بر اساس طرح‌واره‌های ۱۸گانه جفری یانگ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "fa",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512 any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "utilities"]
+}
