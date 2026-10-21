@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="description" content="برنامه ثبت و آرشیو کارت‌های مقابله‌ای طرح‌واره جفری یانگ برای گوشی و تبلت">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxZTNhOGEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBmMTcyYSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImNhcmRHcmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiODJmNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2hpZWxkR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxMGI5ODEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1OTY2OSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iOCIgc3RkRGV2aWF0aW9uPSIxMiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9IjAuNCIgLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIHJvdW5kZWQgYXBwIGljb24gLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTAiIGZpbGw9InVybCgjYmdHcmFkKSIgLz4KCiAgPCEtLSBPdXRlciBDYXJkIEZyYW1lIC0tPgogIDxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KICAgIDxyZWN0IHg9Ijc2IiB5PSI4NiIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIzNDAiIHJ4PSIzMiIgZmlsbD0iIzFlMjkzYiIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjYiIC8+CiAgPC9nPgoKICA8IS0tIEhlYWRlciBDYXJkIEFjY2VudCAtLT4KICA8cGF0aCBkPSJNIDc2IDExOCBDIDc2IDEwMCA5MCA4NiAxMDggODYgTCA0MDQgODYgQyA0MjIgODYgNDM2IDEwMCA0MzYgMTE4IEwgNDM2IDE2MCBMIDc2IDE2MCBaIiBmaWxsPSJ1cmwoI2NhcmRHcmFkKSIgLz4KICAKICA8IS0tIFRleHQgbGluZXMgcmVwcmVzZW50aW5nIHRoZSBjYXJkIGl0ZW1zIC0tPgogIDxyZWN0IHg9IjExNiIgeT0iMTEyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjIyIiByeD0iMTEiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOTUiIC8+CiAgPGNpcmNsZSBjeD0iMzkwIiBjeT0iMTIzIiByPSIxMiIgZmlsbD0iIzkzYzVmZCIgLz4KCiAgPHJlY3QgeD0iMTE2IiB5PSIxOTYiIHdpZHRoPSIyODAiIGhlaWdodD0iMjAiIHJ4PSIxMCIgZmlsbD0iIzk0YTNiOCIgLz4KICA8cmVjdCB4PSIxMTYiIHk9IjIzNCIgd2lkdGg9IjIzMCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjNjQ3NDhiIiAvPgogIDxyZWN0IHg9IjExNiIgeT0iMjcyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiM2NDc0OGIiIC8+CgogIDwhLS0gU2hpZWxkIC8gSGVhbHRoeSBBZHVsdCBzeW1ib2wgYXQgYm90dG9tIHJpZ2h0IG9mIGNhcmQgLS0+CiAgPGcgZmlsdGVyPSJ1cmwoI3NoYWRvdykiPgogICAgPHBhdGggZD0iTSAzMzAgMjkwIFEgMzgwIDI4MCA0MzAgMjkwIFEgNDMwIDM2MCAzODAgNDEwIFEgMzMwIDM2MCAzMzAgMjkwIFoiIGZpbGw9InVybCgjc2hpZWxkR3JhZCkiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI0IiAvPgogICAgPCEtLSBDaGVja21hcmsgaW5zaWRlIHNoaWVsZCAtLT4KICAgIDxwYXRoIGQ9Ik0gMzU2IDM0NSBMIDM3NCAzNjUgTCA0MDYgMzI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPgogIDwvZz4KCiAgPCEtLSBGbGFzaGNhcmQgYmFkZ2UgYXQgYm90dG9tIGxlZnQgLS0+CiAgPHJlY3QgeD0iMTE2IiB5PSIzMzAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzgiIHJ4PSIxMiIgZmlsbD0iIzMzNDE1NSIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiIC8+CiAgPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzQ5IiByPSI3IiBmaWxsPSIjMzhiZGY4IiAvPgogIDxyZWN0IHg9IjE2MCIgeT0iMzQyIiB3aWR0aD0iODUiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZTJlOGYwIiAvPgo8L3N2Zz4K">
+  <title>کارت مقابله‌ای طرح‌واره (نسخه ۰.۲)</title>
+  <style>
+    :root {
+      --bg-main: #0b1120;
+      --bg-surface: #1e293b;
+      --bg-surface-elevated: #283548;
+      --bg-input: #0f172a;
+      --border-color: #475569;
+      --border-focus: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-dim: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --success: #10b981;
+      --success-hover: #059669;
+      --danger: #ef4444;
+      --danger-hover: #dc2626;
+      --accent: #f59e0b;
+      --badge-bg: #1e3a8a;
+      --badge-text: #bfdbfe;
+      --focus-ring: 0 0 0 3px #fde047;
+      --radius: 12px;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Vazirmatn", "IRANSans", Tahoma, Arial, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-main: #f1f5f9;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #e2e8f0;
+      --bg-input: #ffffff;
+      --border-color: #94a3b8;
+      --border-focus: #0284c7;
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-dim: #64748b;
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --success: #047857;
+      --success-hover: #065f46;
+      --danger: #b91c1c;
+      --danger-hover: #991b1b;
+      --accent: #b45309;
+      --badge-bg: #dbeafe;
+      --badge-text: #1e40af;
+      --focus-ring: 0 0 0 3px #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: rgba(56, 189, 248, 0.2);
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.7;
+      font-size: 17px;
+      padding-bottom: 70px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* دسترس‌پذیری برای صفحه‌خوان TalkBack */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    :focus-visible {
+      outline: 3px solid #fde047 !important;
+      outline-offset: 3px !important;
+    }
+
+    /* هدر اصلی برنامه */
+    header.app-header {
+      background-color: var(--bg-surface);
+      border-bottom: 2px solid var(--border-color);
+      padding: 14px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .app-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-icon-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    h1.app-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      background: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 15px;
+      cursor: pointer;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: inherit;
+    }
+
+    /* نوار منوی اصلی (تب‌ها) */
+    nav.app-nav {
+      background-color: var(--bg-surface);
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      position: sticky;
+      top: 66px;
+      z-index: 90;
+    }
+
+    .nav-tab {
+      flex: 1;
+      padding: 14px 10px;
+      background: none;
+      border: none;
+      border-bottom: 4px solid transparent;
+      color: var(--text-dim);
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 52px;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .nav-tab[aria-selected="true"] {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+      background-color: rgba(59, 130, 246, 0.08);
+    }
+
+    .badge-count {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 13px;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    /* محفظه اصلی صفحات */
+    main.app-main {
+      flex: 1;
+      max-width: 760px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .view-screen {
+      display: none;
+    }
+
+    .view-screen.active {
+      display: block;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* نوار پیشرفت مرحله در نمای کارت جدید */
+    .step-progress-wrapper {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      margin-bottom: 18px;
+    }
+
+    .step-progress-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .step-counter-text {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 15px;
+    }
+
+    .section-badge-text {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      padding: 3px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .progress-bar-bg {
+      background-color: var(--bg-main);
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .progress-bar-fill {
+      background: linear-gradient(90deg, #3b82f6, #60a5fa);
+      height: 100%;
+      width: 10%;
+      transition: width 0.3s ease;
+    }
+
+    /* کادر سوال جاری */
+    .question-card {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .question-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .question-prompt {
+      font-size: 18px;
+      font-weight: 600;
+      color: #93c5fd;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .question-hint {
+      font-size: 15px;
+      color: var(--text-dim);
+      background-color: rgba(15, 23, 42, 0.5);
+      border-right: 4px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 18px;
+    }
+
+    /* کادر ورودی متن */
+    .form-textarea {
+      width: 100%;
+      min-height: 130px;
+      background-color: var(--bg-input);
+      color: var(--text-main);
+      border: 2px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 17px;
+      line-height: 1.8;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-textarea:focus {
+      border-color: var(--border-focus);
+      outline: none;
+    }
+
+    /* چک‌باکس‌های مرحله ۳ (طرح‌واره‌های ۱۸گانه) */
+    .schemas-container {
+      margin-top: 10px;
+    }
+
+    .schema-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .schema-count-status {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .schema-quick-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .small-btn {
+      background-color: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: inherit;
+      min-height: 38px;
+    }
+
+    .schema-list-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .schema-item-label {
+      background-color: var(--bg-input);
+      border: 2px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      min-height: 56px;
+      user-select: none;
+      transition: all 0.2s ease;
+    }
+
+    .schema-item-label:has(input:checked) {
+      border-color: var(--primary);
+      background-color: rgba(59, 130, 246, 0.14);
+    }
+
+    .schema-checkbox {
+      width: 24px;
+      height: 24px;
+      accent-color: var(--primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .schema-info-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .schema-title-fa {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text-main);
+    }
+
+    .schema-title-en {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* نوار دکمه‌های ناوبری مراحل */
+    .wizard-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 54px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      text-align: center;
+      -webkit-appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-surface-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-success {
+      background-color: var(--success);
+      color: #ffffff;
+    }
+
+    .btn-success:hover:not(:disabled) {
+      background-color: var(--success-hover);
+    }
+
+    .btn-danger {
+      background-color: var(--danger);
+      color: #ffffff;
+    }
+
+    .btn-danger:hover:not(:disabled) {
+      background-color: var(--danger-hover);
+    }
+
+    .shortcut-tip {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 14px;
+    }
+
+    /* صفحه پایان و تکمیل کارت */
+    .completion-banner {
+      background-color: rgba(16, 185, 129, 0.12);
+      border: 2px solid var(--success);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .completion-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .completion-banner h2 {
+      font-size: 22px;
+      color: #34d399;
+      margin-bottom: 8px;
+    }
+
+    /* آرشیو کارت‌ها (منوی داخلی) */
+    .archive-header-box {
+      margin-bottom: 20px;
+    }
+
+    .archive-header-box h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .archive-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .archive-tools {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px 42px 12px 16px;
+      color: var(--text-main);
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      outline: none;
+    }
+
+    .search-icon-symbol {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      font-size: 18px;
+      pointer-events: none;
+    }
+
+    .archive-actions-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .archive-actions-bar .btn {
+      min-height: 46px;
+      font-size: 15px;
+      padding: 10px 14px;
+    }
+
+    /* نشانگر تعداد کل کارت‌ها در آرشیو */
+    .archive-summary-badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 800;
+      font-size: 15px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border-color);
+    }
+
+    /* نوار اقدامات گروهی روی کارت‌های انتخاب‌شده */
+    .batch-actions-panel {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .batch-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .batch-count-badge {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .batch-quick-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .batch-panel-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .batch-panel-buttons .btn {
+      flex: 1 1 calc(50% - 10px);
+      min-height: 48px;
+      font-size: 15px;
+    }
+
+    /* کارت‌های ذخیره‌شده در آرشیو */
+    .cards-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card-entry {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+    }
+
+    .card-entry.is-selected {
+      border-color: var(--primary);
+      background-color: rgba(59, 130, 246, 0.1);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .card-entry:hover {
+      border-color: #64748b;
+    }
+
+    .card-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .card-header-main {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .card-select-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-select-checkbox {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      accent-color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .card-select-label {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-dim);
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    .card-entry-date {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .card-schemas-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .schema-tag {
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    .card-preview-text {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      background-color: rgba(15, 23, 42, 0.4);
+      padding: 10px 14px;
+      border-radius: 8px;
+      border-right: 3px solid var(--primary);
+    }
+
+    .card-entry-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .card-entry-actions .btn {
+      min-height: 44px;
+      font-size: 14px;
+      padding: 8px 14px;
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    .card-entry-actions .btn-read {
+      flex: 1 1 100%;
+      background-color: var(--primary);
+      color: #ffffff;
+      font-size: 16px;
+    }
+
+    /* حالت خالی بودن آرشیو */
+    .empty-archive-state {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--bg-surface);
+      border: 2px dashed var(--border-color);
+      border-radius: var(--radius);
+    }
+
+    .empty-icon {
+      font-size: 52px;
+      margin-bottom: 14px;
+      color: var(--text-dim);
+    }
+
+    .empty-archive-state h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .empty-archive-state p {
+      font-size: 15px;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+    }
+
+    /* نمای مطالعه متن کارت (Reader View) */
+    .reader-container {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-bottom: 24px;
+    }
+
+    .reader-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .reader-card-meta {
+      margin-bottom: 22px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .reader-card-date {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .reader-section {
+      margin-bottom: 24px;
+      padding: 16px;
+      background-color: var(--bg-input);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+    }
+
+    .reader-section-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #93c5fd;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(147, 197, 253, 0.25);
+      padding-bottom: 6px;
+    }
+
+    .reader-item {
+      margin-bottom: 16px;
+    }
+
+    .reader-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .reader-item-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+    }
+
+    .reader-item-content {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+
+    .raw-text-box {
+      width: 100%;
+      background-color: #050811;
+      color: #e2e8f0;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 14px;
+      font-family: monospace;
+      line-height: 1.6;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      margin-top: 10px;
+    }
+
+    /* دیالوگ تأیید حذف */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--danger);
+    }
+
+    .modal-body {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    /* اعلان شناور سیستم برای TalkBack و کاربر */
+    .toast-notice {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1e293b;
+      color: #ffffff;
+      border: 2px solid var(--primary);
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      z-index: 300;
+      display: none;
+      text-align: center;
+      max-width: 90%;
+    }
+
+    /* پاورقی برنامه و مشخصات توسعه‌دهنده */
+    .app-footer {
+      margin-top: 36px;
+      padding: 24px 16px;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-credit {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+    }
+
+    .footer-credit strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .footer-telegram-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background-color: var(--bg-surface-elevated);
+      border: 1px solid var(--border-color);
+      transition: all 0.2s ease;
+      min-height: 44px;
+    }
+
+    .footer-telegram-link:hover, .footer-telegram-link:focus {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- کادر هشدار هوشمند برای مواردی که جاوااسکریپت مسدود است (مانند پیش‌نمایش تلگرام یا اپ‌های متفرقه در آیفون) -->
+  <div id="js-disabled-banner" style="background-color: #991b1b; color: #ffffff; padding: 18px 16px; text-align: center; font-size: 15px; font-weight: bold; line-height: 1.8; border-bottom: 4px solid #7f1d1d; direction: rtl; font-family: inherit;">
+    ⚠️ <span style="font-size: 17px;">توجه برای کاربران آیفون:</span><br>
+    این فایل در حالت «پیش‌نمایش موقت» باز شده و دکمه‌های آن غیرفعال هستند.<br>
+    <strong>نحوه اجرای صحیح:</strong> در بالای صفحه روی آیکون <strong>اشتراک‌گذاری (مربع با فلش رو به بالا ⬆️)</strong> بزنید و گزینهٔ <strong>«Open in Safari»</strong> یا مرورگر کروم را انتخاب کنید.
+  </div>
+
+  <!-- هدر برنامه -->
+  <header class="app-header" role="banner">
+    <div class="app-title-group">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxZTNhOGEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBmMTcyYSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImNhcmRHcmFkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiODJmNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQ0ZWQ4IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2hpZWxkR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxMGI5ODEiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1OTY2OSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iOCIgc3RkRGV2aWF0aW9uPSIxMiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9IjAuNCIgLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIHJvdW5kZWQgYXBwIGljb24gLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTAiIGZpbGw9InVybCgjYmdHcmFkKSIgLz4KCiAgPCEtLSBPdXRlciBDYXJkIEZyYW1lIC0tPgogIDxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KICAgIDxyZWN0IHg9Ijc2IiB5PSI4NiIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIzNDAiIHJ4PSIzMiIgZmlsbD0iIzFlMjkzYiIgc3Ryb2tlPSIjNDc1NTY5IiBzdHJva2Utd2lkdGg9IjYiIC8+CiAgPC9nPgoKICA8IS0tIEhlYWRlciBDYXJkIEFjY2VudCAtLT4KICA8cGF0aCBkPSJNIDc2IDExOCBDIDc2IDEwMCA5MCA4NiAxMDggODYgTCA0MDQgODYgQyA0MjIgODYgNDM2IDEwMCA0MzYgMTE4IEwgNDM2IDE2MCBMIDc2IDE2MCBaIiBmaWxsPSJ1cmwoI2NhcmRHcmFkKSIgLz4KICAKICA8IS0tIFRleHQgbGluZXMgcmVwcmVzZW50aW5nIHRoZSBjYXJkIGl0ZW1zIC0tPgogIDxyZWN0IHg9IjExNiIgeT0iMTEyIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjIyIiByeD0iMTEiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOTUiIC8+CiAgPGNpcmNsZSBjeD0iMzkwIiBjeT0iMTIzIiByPSIxMiIgZmlsbD0iIzkzYzVmZCIgLz4KCiAgPHJlY3QgeD0iMTE2IiB5PSIxOTYiIHdpZHRoPSIyODAiIGhlaWdodD0iMjAiIHJ4PSIxMCIgZmlsbD0iIzk0YTNiOCIgLz4KICA8cmVjdCB4PSIxMTYiIHk9IjIzNCIgd2lkdGg9IjIzMCIgaGVpZ2h0PSIyMCIgcng9IjEwIiBmaWxsPSIjNjQ3NDhiIiAvPgogIDxyZWN0IHg9IjExNiIgeT0iMjcyIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiM2NDc0OGIiIC8+CgogIDwhLS0gU2hpZWxkIC8gSGVhbHRoeSBBZHVsdCBzeW1ib2wgYXQgYm90dG9tIHJpZ2h0IG9mIGNhcmQgLS0+CiAgPGcgZmlsdGVyPSJ1cmwoI3NoYWRvdykiPgogICAgPHBhdGggZD0iTSAzMzAgMjkwIFEgMzgwIDI4MCA0MzAgMjkwIFEgNDMwIDM2MCAzODAgNDEwIFEgMzMwIDM2MCAzMzAgMjkwIFoiIGZpbGw9InVybCgjc2hpZWxkR3JhZCkiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI0IiAvPgogICAgPCEtLSBDaGVja21hcmsgaW5zaWRlIHNoaWVsZCAtLT4KICAgIDxwYXRoIGQ9Ik0gMzU2IDM0NSBMIDM3NCAzNjUgTCA0MDYgMzI1IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPgogIDwvZz4KCiAgPCEtLSBGbGFzaGNhcmQgYmFkZ2UgYXQgYm90dG9tIGxlZnQgLS0+CiAgPHJlY3QgeD0iMTE2IiB5PSIzMzAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzgiIHJ4PSIxMiIgZmlsbD0iIzMzNDE1NSIgc3Ryb2tlPSIjMzhiZGY4IiBzdHJva2Utd2lkdGg9IjMiIC8+CiAgPGNpcmNsZSBjeD0iMTQwIiBjeT0iMzQ5IiByPSI3IiBmaWxsPSIjMzhiZGY4IiAvPgogIDxyZWN0IHg9IjE2MCIgeT0iMzQyIiB3aWR0aD0iODUiIGhlaWdodD0iMTQiIHJ4PSI3IiBmaWxsPSIjZTJlOGYwIiAvPgo8L3N2Zz4K" alt="" class="app-icon-img" aria-hidden="true">
+      <h1 class="app-title">کارت مقابله‌ای طرح‌واره <small style="font-size: 13px; font-weight: normal; opacity: 0.8;">(نسخه ۰.۲)</small></h1>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="btn-theme-toggle" aria-label="تغییر کنتراست پوسته بین حالت روشن و تاریک">
+        <span aria-hidden="true" id="theme-icon">☀️</span>
+        <span class="sr-only">تغییر حالت نور</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- نوار منوی اصلی (تب‌ها) -->
+  <nav class="app-nav" role="tablist" aria-label="منوی اصلی برنامه">
+    <button type="button" class="nav-tab" id="tab-btn-wizard" role="tab" aria-selected="true" aria-controls="screen-wizard">
+      <span aria-hidden="true">✏️</span>
+      <span>کارت جدید</span>
+    </button>
+    <button type="button" class="nav-tab" id="tab-btn-archive" role="tab" aria-selected="false" aria-controls="screen-archive" aria-label="آرشیو کارت‌ها، ۰ کارت ذخیره شده">
+      <span aria-hidden="true">📁</span>
+      <span>آرشیو کارت‌ها</span>
+      <span class="badge-count" id="nav-archive-count" aria-hidden="true">(۰)</span>
+    </button>
+  </nav>
+
+  <!-- محتوای اصلی -->
+  <main class="app-main" id="main-content" role="main">
+
+    <!-- اعلان صوتی برای صفحه‌خوان TalkBack -->
+    <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- اعلان شناور تصویری -->
+    <div id="toast-box" class="toast-notice" role="status"></div>
+
+    <!-- ==================== صفحه ۱: تکمیل گام‌به‌گام کارت جدید ==================== -->
+    <section class="view-screen active" id="screen-wizard" role="tabpanel" aria-labelledby="tab-btn-wizard">
+      
+      <!-- نوار نشانگر پیشرفت -->
+      <div class="step-progress-wrapper" aria-label="اطلاعات مرحله فعلی">
+        <div class="step-progress-meta">
+          <span class="step-counter-text" id="step-counter-label">مرحله ۱ از ۱۰</span>
+          <span class="section-badge-text" id="section-badge-label">بخش ۱: پذیرش احساس فعلی</span>
+        </div>
+        <div class="progress-bar-bg" role="progressbar" id="progress-bar-element" aria-valuenow="1" aria-valuemin="1" aria-valuemax="10" aria-label="میزان تکمیل کارت">
+          <div class="progress-bar-fill" id="progress-fill-bar"></div>
+        </div>
+      </div>
+
+      <!-- کادر سوال جاری -->
+      <div class="question-card" id="question-container">
+        <h2 class="question-title" id="question-heading" tabindex="-1">
+          <span id="question-number-symbol">۱.</span>
+          <span id="question-title-text">هیجان‌های فعلی</span>
+        </h2>
+
+        <p class="question-prompt" id="question-prompt-text">در حال حاضر چه احساس و هیجانی دارید؟</p>
+        <p class="question-hint" id="question-hint-text">مثال: اضطراب، غم، خشم، تنهایی، شرم یا ناامیدی</p>
+
+        <!-- فرم متنی (مراحل ۱، ۲، ۴، ۵، ۶، ۷، ۸، ۹، ۱۰) -->
+        <div id="text-input-group">
+          <label for="step-text-input" class="sr-only">پاسخ شما برای این مرحله:</label>
+          <textarea id="step-text-input" class="form-textarea" placeholder="پاسخ خود را اینجا بنویسید..." rows="4"></textarea>
+        </div>
+
+        <!-- فرم چک‌باکس‌های ۱۸ طرح‌واره (مرحله ۳) -->
+        <div id="schema-checkboxes-group" class="schemas-container" style="display: none;">
+          <div class="schema-toolbar">
+            <span class="schema-count-status" id="schemas-selected-count" aria-live="polite">۰ طرح‌واره انتخاب شده است</span>
+            <div class="schema-quick-btns">
+              <button type="button" class="small-btn" id="btn-select-all-schemas">انتخاب همه</button>
+              <button type="button" class="small-btn" id="btn-clear-all-schemas">پاک کردن</button>
+            </div>
+          </div>
+
+          <fieldset style="border: none; padding: 0; margin: 0;">
+            <legend class="sr-only">فهرست ۱۸ طرح‌واره جفری یانگ (امکان انتخاب همزمان چند طرح‌واره)</legend>
+            <div class="schema-list-grid" id="schemas-options-list">
+              <!-- چک‌باکس‌ها با جاوااسکریپت درج می‌شوند -->
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <!-- کلیدهای رفتن به مرحله بعد و قبل -->
+      <div class="wizard-actions">
+        <button type="button" class="btn btn-secondary" id="btn-wizard-prev" disabled>
+          <span aria-hidden="true">⬅️</span>
+          <span>مرحله قبلی</span>
+        </button>
+
+        <button type="button" class="btn btn-primary" id="btn-wizard-next">
+          <span>مرحله بعدی</span>
+          <span aria-hidden="true">➡️</span>
+        </button>
+      </div>
+
+      <p class="shortcut-tip">
+        با فشردن کلیدهای <strong>Ctrl + Enter</strong> می‌توانید مستقیماً به مرحله بعد بروید.
+      </p>
+
+      <!-- کادر خلاصه بعد از اتمام مرحله دهم -->
+      <div id="completion-summary-card" style="display: none; margin-top: 24px;">
+        <div class="completion-banner">
+          <div class="completion-icon" aria-hidden="true">🎉</div>
+          <h2>کارت مقابله‌ای با موفقیت ذخیره شد!</h2>
+          <p id="completion-time-desc">در آرشیو برنامه ثبت و نگهداری گردید.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <button type="button" class="btn btn-primary" id="btn-goto-reader-now">
+            <span aria-hidden="true">📖</span>
+            <span>مشاهده و خواندن این کارت در آرشیو</span>
+          </button>
+          
+          <button type="button" class="btn btn-secondary" id="btn-share-new-card">
+            <span aria-hidden="true">📤</span>
+            <span>اشتراک‌گذاری کارت (واتساپ / تلگرام / یادداشت‌ها)</span>
+          </button>
+
+          <button type="button" class="btn btn-secondary" id="btn-download-new-card">
+            <span aria-hidden="true">💾</span>
+            <span>دانلود فایل متنی کارت (.txt)</span>
+          </button>
+
+          <button type="button" class="btn btn-success" id="btn-start-another-card">
+            <span aria-hidden="true">✏️</span>
+            <span>شروع تکمیل یک کارت جدید</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== صفحه ۲: آرشیو کارت‌ها (منوی داخلی) ==================== -->
+    <section class="view-screen" id="screen-archive" role="tabpanel" aria-labelledby="tab-btn-archive">
+      <div class="archive-header-box">
+        <h2>آرشیو کارت‌های مقابله‌ای</h2>
+        <p class="archive-desc">
+          تمام کارت‌های تکمیل‌شده در حافظه داخلی گوشی شما ذخیره شده‌اند و در هر زمان به صورت آفلاین قابل مطالعه و بازخوانی هستند.
+        </p>
+        <div class="archive-summary-badge" id="archive-count-summary" role="status" aria-live="polite">۰ کارت در آرشیو ثبت شده است</div>
+
+        <div class="archive-tools">
+          <div class="search-input-wrapper">
+            <span class="search-icon-symbol" aria-hidden="true">🔍</span>
+            <label for="archive-search-box" class="sr-only">جستجو در کارت‌های ذخیره شده بر اساس تاریخ، طرح‌واره یا متن:</label>
+            <input type="search" id="archive-search-box" class="search-input" placeholder="جستجو بر اساس تاریخ، نام طرح‌واره یا متن پاسخ...">
+          </div>
+
+          <div class="archive-actions-bar">
+            <button type="button" class="btn btn-primary" id="btn-archive-new-card">
+              <span aria-hidden="true">➕</span>
+              <span>کارت جدید</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="btn-export-backup" aria-label="دانلود فایل پشتیبان از تمام کارت‌ها">
+              <span aria-hidden="true">💾</span>
+              <span>پشتیبان‌گیری (دانلود همه)</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="btn-trigger-import" aria-label="بازیابی کارت‌ها از فایل پشتیبان">
+              <span aria-hidden="true">📥</span>
+              <span>بازیابی از فایل</span>
+            </button>
+            <input type="file" id="backup-file-input" accept=".json" class="sr-only" aria-label="انتخاب فایل پشتیبان JSON">
+          </div>
+
+          <!-- نوار اقدامات گروهی روی کارت‌های انتخاب‌شده -->
+          <div id="batch-actions-bar" class="batch-actions-panel" style="display: none;" role="region" aria-label="عملیات گروهی روی کارت‌های انتخاب‌شده">
+            <div class="batch-panel-header">
+              <span class="batch-count-badge" id="batch-selected-count-label">۰ کارت انتخاب شده است</span>
+              <div class="batch-quick-btns">
+                <button type="button" class="small-btn" id="btn-batch-select-all">انتخاب همه</button>
+                <button type="button" class="small-btn" id="btn-batch-deselect-all">لغو انتخاب‌ها</button>
+              </div>
+            </div>
+            <div class="batch-panel-buttons">
+              <button type="button" class="btn btn-primary" id="btn-batch-share" aria-label="اشتراک‌گذاری همزمان کارت‌های انتخاب‌شده">
+                <span aria-hidden="true">📤</span>
+                <span id="btn-batch-share-text">اشتراک‌گذاری همزمان (۰)</span>
+              </button>
+              <button type="button" class="btn btn-danger" id="btn-batch-delete" aria-label="حذف همزمان کارت‌های انتخاب‌شده">
+                <span aria-hidden="true">🗑️</span>
+                <span id="btn-batch-delete-text">حذف همزمان (۰)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- وضعیت خالی بودن آرشیو -->
+      <div class="empty-archive-state" id="archive-empty-view" style="display: none;">
+        <div class="empty-icon" aria-hidden="true">📝</div>
+        <h3>هنوز کارتی ثبت نشده است</h3>
+        <p>هر کارتی که پر کنید به صورت خودکار در این منو ذخیره و نگهداری می‌شود.</p>
+        <button type="button" class="btn btn-primary" id="btn-empty-start">
+          <span aria-hidden="true">✏️</span>
+          <span>شروع ثبت اولین کارت مقابله‌ای</span>
+        </button>
+      </div>
+
+      <!-- لیست کارت‌های ذخیره شده -->
+      <ul class="cards-list" id="saved-cards-list" role="list" aria-label="فهرست کارت‌های تکمیل‌شده">
+        <!-- آیتم‌های کارت با جاوااسکریپت اضافه می‌شوند -->
+      </ul>
+    </section>
+
+    <!-- ==================== صفحه ۳: نمای مطالعه کارت (Reader View) ==================== -->
+    <section class="view-screen" id="screen-reader" role="region" aria-label="نمای مطالعه متن کارت">
+      <div class="reader-container">
+        <div class="reader-top-bar">
+          <button type="button" class="btn btn-secondary" id="btn-reader-back" style="flex: none; min-height: 44px;">
+            <span aria-hidden="true">⬅️</span>
+            <span>بازگشت به آرشیو</span>
+          </button>
+
+          <div style="display: flex; gap: 8px;">
+            <button type="button" class="icon-btn" id="btn-reader-share" aria-label="اشتراک‌گذاری این کارت">
+              <span aria-hidden="true">📤</span>
+              <span>اشتراک‌گذاری</span>
+            </button>
+            <button type="button" class="icon-btn" id="btn-reader-download" aria-label="دانلود فایل متنی این کارت">
+              <span aria-hidden="true">💾</span>
+              <span>دانلود txt</span>
+            </button>
+            <button type="button" class="icon-btn" id="btn-reader-copy" aria-label="کپی متن کامل این کارت در کلیپ‌بورد">
+              <span aria-hidden="true">📋</span>
+              <span>کپی متن</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="reader-card-meta">
+          <h2 class="reader-card-date" id="reader-meta-date" tabindex="-1">تاریخ ثبت کارت</h2>
+          <div class="card-schemas-tags" id="reader-meta-schemas"></div>
+        </div>
+
+        <!-- بخش‌های ۴ گانه کارت مقابله‌ای -->
+        <article id="reader-content-body">
+          
+          <!-- بخش ۱ -->
+          <section class="reader-section">
+            <h3 class="reader-section-title">بخش ۱: پذیرش احساس فعلی</h3>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۱. هیجان‌های فعلی:</h4>
+              <p class="reader-item-content" id="reader-ans-0"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۲. موقعیت برانگیزاننده:</h4>
+              <p class="reader-item-content" id="reader-ans-1"></p>
+            </div>
+          </section>
+
+          <!-- بخش ۲ -->
+          <section class="reader-section">
+            <h3 class="reader-section-title">بخش ۲: طرح‌واره (ها)</h3>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۳. طرح‌واره‌های فعال:</h4>
+              <p class="reader-item-content" id="reader-ans-2"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۴. ریشه تحولی در گذشته / کودکی:</h4>
+              <p class="reader-item-content" id="reader-ans-3"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۵. تحریف‌های شناختی طرح‌واره (اغراق و بزرگ‌نمایی):</h4>
+              <p class="reader-item-content" id="reader-ans-4"></p>
+            </div>
+          </section>
+
+          <!-- بخش ۳ -->
+          <section class="reader-section">
+            <h3 class="reader-section-title">بخش ۳: واقعیت‌آزمایی</h3>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۶. تفکر منفی و خودکار اولیه:</h4>
+              <p class="reader-item-content" id="reader-ans-5"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۷. دیدگاه سالم و واقع‌بینانه (بزرگسال سالم):</h4>
+              <p class="reader-item-content" id="reader-ans-6"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۸. شواهد تأییدکننده دیدگاه سالم در زندگی:</h4>
+              <p class="reader-item-content" id="reader-ans-7"></p>
+            </div>
+          </section>
+
+          <!-- بخش ۴ -->
+          <section class="reader-section">
+            <h3 class="reader-section-title">بخش ۴: دستور رفتاری (اقدام سالم)</h3>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۹. رفتار تکانشی و منفی (ناسازگار):</h4>
+              <p class="reader-item-content" id="reader-ans-8"></p>
+            </div>
+            <div class="reader-item">
+              <h4 class="reader-item-title">۱۰. رفتار سالم و سازگار جانشین:</h4>
+              <p class="reader-item-content" id="reader-ans-9"></p>
+            </div>
+          </section>
+
+          <!-- مشاهده متن استاندارد نوت‌پد -->
+          <details style="margin-top: 20px;">
+            <summary style="font-weight: 700; cursor: pointer; color: var(--primary); padding: 8px 0;">
+              مشاهده قالب خام متنی (شبیه فایل نوت‌پد)
+            </summary>
+            <pre class="raw-text-box" id="reader-raw-notepad"></pre>
+          </details>
+
+        </article>
+
+        <div style="margin-top: 24px;">
+          <button type="button" class="btn btn-secondary" id="btn-reader-back-bottom" style="width: 100%;">
+            <span aria-hidden="true">⬅️</span>
+            <span>بازگشت به فهرست کارت‌ها در آرشیو</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- پاورقی برنامه: مشخصات توسعه‌دهنده -->
+  <footer class="app-footer" role="contentinfo">
+    <div class="footer-credit">
+      <span>توسعه‌دهنده:</span>
+      <strong>سعید زرگریان</strong>
+      <span style="opacity: 0.5; margin: 0 4px;">•</span>
+      <span style="color: var(--primary); font-weight: 700;">نسخه ۰.۲</span>
+    </div>
+    <div class="footer-contact">
+      <a href="https://t.me/Saeed_zargarian" class="footer-telegram-link" target="_blank" rel="noopener noreferrer">
+        <span aria-hidden="true">✈️</span>
+        <span>تلگرام: @Saeed_zargarian</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- مدال تأیید حذف -->
+  <div class="modal-backdrop" id="delete-modal" role="dialog" aria-modal="true" aria-labelledby="modal-delete-title">
+    <div class="modal-box">
+      <h3 class="modal-title" id="modal-delete-title">حذف کارت مقابله‌ای</h3>
+      <p class="modal-body" id="modal-delete-body">آیا از حذف این کارت اطمینان دارید؟ این عمل قابل بازگشت نیست.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="btn-cancel-delete">انصراف</button>
+        <button type="button" class="btn btn-danger" id="btn-confirm-delete">بله، حذف شود</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ۱. پنهان‌سازی آنی کادر هشدار در صورت فعال بودن موتور جاوااسکریپت
+    try {
+      var _noJsBox = document.getElementById("js-disabled-banner");
+      if (_noJsBox) {
+        _noJsBox.style.display = "none";
+      }
+    } catch (e) {}
+
+    /* =====================================================================
+       ۱. فهرست ۱۸ طرح‌واره جفری یانگ و ۱۰ سوال استاندارد
+       ===================================================================== */
+    const SCHEMA_ITEMS = [
+      // حوزه ۱: بریدگی و طرد (Disconnection & Rejection)
+      { name: "رهاشدگی / بی‌ثباتی", en: "Abandonment / Instability", label: "۱. رهاشدگی / بی‌ثباتی (Abandonment / Instability)" },
+      { name: "بی‌اعتمادی / بدرفتاری", en: "Mistrust / Abuse", label: "۲. بی‌اعتمادی / بدرفتاری (Mistrust / Abuse)" },
+      { name: "محرومیت هیجانی", en: "Emotional Deprivation", label: "۳. محرومیت هیجانی (Emotional Deprivation)" },
+      { name: "نقص / شرم", en: "Defectiveness / Shame", label: "۴. نقص / شرم (Defectiveness / Shame)" },
+      { name: "انزوای اجتماعی / بیگانگی", en: "Social Isolation / Alienation", label: "۵. انزوای اجتماعی / بیگانگی (Social Isolation / Alienation)" },
+
+      // حوزه ۲: خودگردانی و عملکرد مختل (Impaired Autonomy & Performance)
+      { name: "وابستگی / بی‌کفایتی", en: "Dependence / Incompetence", label: "۶. وابستگی / بی‌کفایتی (Dependence / Incompetence)" },
+      { name: "آسیب‌پذیری نسبت به ضرر یا بیماری", en: "Vulnerability to Harm or Illness", label: "۷. آسیب‌پذیری نسبت به ضرر یا بیماری (Vulnerability to Harm or Illness)" },
+      { name: "گرفتار / خودِ تحول‌نیافته", en: "Enmeshment / Undeveloped Self", label: "۸. گرفتار / خودِ تحول‌نیافته (Enmeshment / Undeveloped Self)" },
+      { name: "شکست", en: "Failure", label: "۹. شکست (Failure)" },
+
+      // حوزه ۳: محدودیت‌های مختل (Impaired Limits)
+      { name: "استحقاق / بزرگ‌منشی", en: "Entitlement / Grandiosity", label: "۱۰. استحقاق / بزرگ‌منشی (Entitlement / Grandiosity)" },
+      { name: "خودانضباطی / خویشتن‌داری ناکافی", en: "Insufficient Self-Control / Self-Discipline", label: "۱۱. خودانضباطی / خویشتن‌داری ناکافی (Insufficient Self-Control / Self-Discipline)" },
+
+      // حوزه ۴: دیگرجهت‌مندی (Other-Directedness)
+      { name: "اطاعت", en: "Subjugation", label: "۱۲. اطاعت (Subjugation)" },
+      { name: "ایثار", en: "Self-Sacrifice", label: "۱۳. ایثار (Self-Sacrifice)" },
+      { name: "پذیرش‌جویی / جلب توجه", en: "Approval-Seeking / Recognition-Seeking", label: "۱۴. پذیرش‌جویی / جلب توجه (Approval-Seeking / Recognition-Seeking)" },
+
+      // حوزه ۵: گوش‌به‌زنگی بیش‌ازحد و بازداری (Overvigilance & Inhibition)
+      { name: "منفی‌گرایی / بدبینی", en: "Negativity / Pessimism", label: "۱۵. منفی‌گرایی / بدبینی (Negativity / Pessimism)" },
+      { name: "بازداری هیجانی", en: "Emotional Inhibition", label: "۱۶. بازداری هیجانی (Emotional Inhibition)" },
+      { name: "معیارهای سرسختانه / عیب‌جویی افراطی", en: "Unrelenting Standards / Hypercriticalness", label: "۱۷. معیارهای سرسختانه / عیب‌جویی افراطی (Unrelenting Standards / Hypercriticalness)" },
+      { name: "تنبیه‌گری", en: "Punitiveness", label: "۱۸. تنبیه‌گری (Punitiveness)" }
+    ];
+
+    const QUESTIONS = [
+      {
+        section: "بخش ۱: پذیرش احساس فعلی",
+        title: "۱. هیجان‌های فعلی",
+        prompt: "در حال حاضر چه احساس و هیجانی دارید؟",
+        hint: "مثال: اضطراب، غم، خشم، تنهایی، شرم یا ناامیدی",
+        type: "text"
+      },
+      {
+        section: "بخش ۱: پذیرش احساس فعلی",
+        title: "۲. موقعیت برانگیزاننده",
+        prompt: "چه اتفاق یا موقعیتی باعث فعال شدن این احساسات شد؟",
+        hint: "مثال: دیر پاسخ دادن فلان شخص، لحن صحبت در جلسه کاری، رفتار سرد همکار",
+        type: "text"
+      },
+      {
+        section: "بخش ۲: طرح‌واره (ها)",
+        title: "۳. نام طرح‌واره‌های فعال‌شده",
+        prompt: "کدام یک از طرح‌واره‌های زیر در این موقعیت فعال شده است؟",
+        hint: "می‌توانید یک یا چند طرح‌واره را علامت بزنید.",
+        type: "checkboxes"
+      },
+      {
+        section: "بخش ۲: طرح‌واره (ها)",
+        title: "۴. ریشه تحولی در گذشته",
+        prompt: "این طرح‌واره‌ها ریشه در کدام اتفاقات گذشته یا دوران کودکی شما دارند؟",
+        hint: "مثال: طرد شدن در کودکی، تنبیه یا سرزنش‌های شدید والدین، دعواهای خانوادگی",
+        type: "text"
+      },
+      {
+        section: "بخش ۲: طرح‌واره (ها)",
+        title: "۵. تحریف‌های شناختی طرح‌واره",
+        prompt: "این طرح‌واره در این لحظه شما را وادار به چه اغراق یا بزرگ‌نمایی می‌کند؟",
+        hint: "مثال: این که همه ترکم می‌کنند، هیچ‌کس دوستم ندارد، هیچ چیز درست نمی‌شود",
+        type: "text"
+      },
+      {
+        section: "بخش ۳: واقعیت‌آزمایی",
+        title: "۶. تفکر منفی و خودکار",
+        prompt: "حتی اگر در این لحظه فکرم به شدت معتقد باشد که...",
+        hint: "باور یا قضاوت منفی اولیه؛ مثال: من بی‌ارزشم، دیگر برایش اهمیتی ندارم",
+        type: "text"
+      },
+      {
+        section: "بخش ۳: واقعیت‌آزمایی",
+        title: "۷. دیدگاه سالم و واقع‌بینانه",
+        prompt: "ولی واقعیت عینی و نگاه بزرگسال سالم چیست؟",
+        hint: "دیدگاه منطقی و واقع‌بینانه؛ مثال: او فقط سرش شلوغ بود و ربطی به بی‌ارزشی من ندارد",
+        type: "text"
+      },
+      {
+        section: "بخش ۳: واقعیت‌آزمایی",
+        title: "۸. شواهد تأییدکننده دیدگاه سالم",
+        prompt: "چه شواهد و نمونه‌های واقعی در زندگی دارید که درستی دیدگاه سالم را تأیید می‌کنند؟",
+        hint: "مثال‌هایی از همراهی دوستان، موفقیت‌های قبلی، یا رفتارهای محبت‌آمیز گذشته",
+        type: "text"
+      },
+      {
+        section: "بخش ۴: دستور رفتاری",
+        title: "۹. رفتار تکانشی و منفی (ناسازگار)",
+        prompt: "بنابراین در ابتدا احساس می‌کنم مایل به انجام چه رفتار منفی یا ناسازگاری هستم؟",
+        hint: "رفتار واکنشی طرح‌واره؛ مثال: قهر کردن، ارسال پیام تند و سرزنش‌آمیز، انزوا و سکوت",
+        type: "text"
+      },
+      {
+        section: "بخش ۴: دستور رفتاری",
+        title: "۱۰. رفتار سالم و سازگار جانشین",
+        prompt: "می‌توانم به جای آن، چه رفتار سالم و سازنده‌ای انجام دهم؟",
+        hint: "پاسخ بالغانه؛ مثال: صبر کردن، گفتگوی آرام و صمیمانه، بیان مستقیم نیازم",
+        type: "text"
+      }
+    ];
+
+    /* =====================================================================
+       ۲. تبدیل تقویم میلادی به خورشیدی و فرمت‌بندی تاریخ
+       ===================================================================== */
+    function gregorianToJalali(gy, gm, gd) {
+      const g_d_m = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+      let gy2 = (gm > 2) ? (gy + 1) : gy;
+      let days = 355666 + (365 * gy) + Math.floor((gy2 + 3) / 4) - Math.floor((gy2 + 99) / 100) + Math.floor((gy2 + 399) / 400) + gd + g_d_m[gm - 1];
+      let jy = -1595 + (33 * Math.floor(days / 12053));
+      days %= 12053;
+      jy += 4 * Math.floor(days / 1461);
+      days %= 1461;
+      if (days > 365) {
+        jy += Math.floor((days - 1) / 365);
+        days = (days - 1) % 365;
+      }
+      let jm, jd;
+      if (days < 186) {
+        jm = 1 + Math.floor(days / 31);
+        jd = 1 + (days % 31);
+      } else {
+        jm = 7 + Math.floor((days - 186) / 30);
+        jd = 1 + ((days - 186) % 30);
+      }
+      return { jy, jm, jd };
+    }
+
+    function getPersianDateTime(dateObj = new Date()) {
+      const { jy, jm, jd } = gregorianToJalali(dateObj.getFullYear(), dateObj.getMonth() + 1, dateObj.getDate());
+      const weekdays = ["یک‌شنبه", "دوشنبه", "سه‌شنبه", "چهارشنبه", "پنج‌شنبه", "جمعه", "شنبه"];
+      const weekdayName = weekdays[dateObj.getDay()];
+      const months = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
+      const monthName = months[jm - 1];
+      const pad = (n) => String(n).padStart(2, '0');
+      const timeStr = `${pad(dateObj.getHours())}:${pad(dateObj.getMinutes())}`;
+      const dateStr = `${weekdayName}، ${jd} ${monthName} ${jy} - ساعت ${timeStr}`;
+      const fileTag = `${jy}-${pad(jm)}-${pad(jd)}_${pad(dateObj.getHours())}-${pad(dateObj.getMinutes())}`;
+      return { dateStr, fileTag, timestamp: dateObj.getTime() };
+    }
+
+    /* =====================================================================
+       ۳. فرمت‌بندی متن استاندارد کارت نوت‌پد
+       ===================================================================== */
+    function formatCardFullText(answers, dateStr) {
+      const ans = answers.map((a, idx) => {
+        if (idx === 2) {
+          if (Array.isArray(a)) return a.length > 0 ? a.join("، ") : "(خالی)";
+          return (a && String(a).trim()) ? String(a).trim() : "(خالی)";
+        }
+        return (a && String(a).trim()) ? String(a).trim() : "(خالی)";
+      });
+
+      while (ans.length < 10) ans.push("(خالی)");
+
+      return `======================================================================
+                 کارت مقابله‌ای طرح‌واره (تکمیل شده)
+زمان ثبت: ${dateStr}
+======================================================================
+
+بخش ۱: پذیرش احساس فعلی
+----------------------------------------------------------------------
+در حال حاضر احساس می‌کنم:
+${ans[0]}
+
+به دلیل (موقعیت برانگیزاننده):
+${ans[1]}
+
+
+بخش ۲: طرح‌واره (ها)
+----------------------------------------------------------------------
+با این حال می‌دانم که این حالت احتمالاً طرح‌وارهٔ [${ans[2]}] من است
+که آن را از طریق [${ans[3]}] یاد گرفته‌ام،
+و این طرح‌واره مرا وادار به اغراق در [${ans[4]}] می‌کند.
+
+
+بخش ۳: واقعیت‌آزمایی
+----------------------------------------------------------------------
+حتی اگر در این لحظه معتقد باشم:
+${ans[5]}
+
+ولی واقعیت عینی این است که:
+${ans[6]}
+
+شواهدی که در زندگی من از دیدگاه سالم حمایت می‌کنند عبارتند از:
+${ans[7]}
+
+
+بخش ۴: دستور رفتاری (اقدام سالم)
+----------------------------------------------------------------------
+بنابراین من در ابتدا احساس می‌کنم مایل به این رفتار ناسازگار هستم:
+${ans[8]}
+
+اما می‌توانم به جای آن، این رفتار سالم جانشین را انتخاب کنم:
+${ans[9]}
+
+======================================================================`;
+    }
+
+    /* =====================================================================
+       ۴. مدیریت دیتابیس لوکال امن (safeStorage - سازگار با سافاری آیفون و حالت خصوصی)
+       ===================================================================== */
+    const STORAGE_KEY = "schema_cards_android_v1";
+    const DRAFT_KEY = "schema_cards_draft_v1";
+    const memoryStore = {};
+
+    const safeStorage = {
+      getItem(key) {
+        try {
+          if (typeof window !== "undefined" && window.localStorage) {
+            return window.localStorage.getItem(key);
+          }
+          return memoryStore[key] || null;
+        } catch (e) {
+          return memoryStore[key] || null;
+        }
+      },
+      setItem(key, value) {
+        try {
+          if (typeof window !== "undefined" && window.localStorage) {
+            window.localStorage.setItem(key, value);
+          }
+        } catch (e) {
+          memoryStore[key] = String(value);
+        }
+      },
+      removeItem(key) {
+        try {
+          if (typeof window !== "undefined" && window.localStorage) {
+            window.localStorage.removeItem(key);
+          }
+        } catch (e) {
+          delete memoryStore[key];
+        }
+      }
+    };
+
+    function loadSavedCards() {
+      try {
+        const raw = safeStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        console.error("Error reading saved cards", e);
+        return [];
+      }
+    }
+
+    function saveAllCards(cards) {
+      try {
+        safeStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
+      } catch (e) {
+        console.error("Error saving cards", e);
+      }
+    }
+
+    function loadDraft() {
+      try {
+        const raw = safeStorage.getItem(DRAFT_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function saveDraft(stepIndex, answers) {
+      try {
+        safeStorage.setItem(DRAFT_KEY, JSON.stringify({ stepIndex, answers }));
+      } catch (e) {}
+    }
+
+    function clearDraft() {
+      try {
+        safeStorage.removeItem(DRAFT_KEY);
+      } catch (e) {}
+    }
+
+    /* =====================================================================
+       ۵. متغیرهای وضعیت برنامه
+       ===================================================================== */
+    let currentStep = 0;
+    let answers = ["", "", [], "", "", "", "", "", "", ""];
+    let currentViewingCard = null;
+    let cardToDeleteId = null;
+    const selectedCards = new Set();
+    let isBatchDeleteMode = false;
+
+    /* عناصر صفحه */
+    const announcer = document.getElementById("sr-announcer");
+    const toastBox = document.getElementById("toast-box");
+
+    function announce(msg) {
+      if (announcer) {
+        announcer.textContent = "";
+        setTimeout(() => { announcer.textContent = msg; }, 50);
+      }
+      showToast(msg);
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      if (!toastBox) return;
+      toastBox.textContent = msg;
+      toastBox.style.display = "block";
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toastBox.style.display = "none";
+      }, 3500);
+    }
+
+    function vibrateBrief() {
+      if ("vibrate" in navigator) {
+        try { navigator.vibrate(12); } catch (e) {}
+      }
+    }
+
+    /* =====================================================================
+       ۶. تغییر تم (روشن / تاریک)
+       ===================================================================== */
+    const themeBtn = document.getElementById("btn-theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+
+    function initTheme() {
+      try {
+        const savedTheme = safeStorage.getItem("schema_theme") || "dark";
+        setTheme(savedTheme);
+      } catch (e) {
+        setTheme("dark");
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      try {
+        safeStorage.setItem("schema_theme", theme);
+      } catch (e) {}
+      if (themeIcon) {
+        themeIcon.textContent = (theme === "light") ? "🌙" : "☀️";
+      }
+    }
+
+    themeBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") || "dark";
+      const next = current === "light" ? "dark" : "light";
+      setTheme(next);
+      announce(next === "light" ? "حالت کنتراست روشن فعال شد" : "حالت تاریک فعال شد");
+    });
+
+    /* =====================================================================
+       ۷. ناوبری بین تب‌ها (کارت جدید / آرشیو)
+       ===================================================================== */
+    const tabBtnWizard = document.getElementById("tab-btn-wizard");
+    const tabBtnArchive = document.getElementById("tab-btn-archive");
+    const screenWizard = document.getElementById("screen-wizard");
+    const screenArchive = document.getElementById("screen-archive");
+    const screenReader = document.getElementById("screen-reader");
+    const navArchiveCount = document.getElementById("nav-archive-count");
+
+    function updateArchiveBadge() {
+      const cards = loadSavedCards();
+      const count = cards.length;
+      if (navArchiveCount) {
+        navArchiveCount.textContent = `(${count})`;
+      }
+      if (tabBtnArchive) {
+        tabBtnArchive.setAttribute("aria-label", `آرشیو کارت‌ها، ${count} کارت ذخیره شده`);
+      }
+      const summaryEl = document.getElementById("archive-count-summary");
+      if (summaryEl) {
+        summaryEl.textContent = `${count} کارت در آرشیو ثبت شده است`;
+      }
+    }
+
+    function switchView(target) {
+      [screenWizard, screenArchive, screenReader].forEach(s => s.classList.remove("active"));
+
+      if (target === "wizard") {
+        screenWizard.classList.add("active");
+        tabBtnWizard.setAttribute("aria-selected", "true");
+        tabBtnArchive.setAttribute("aria-selected", "false");
+        announce(`صفحه ثبت کارت جدید - مرحله ${currentStep + 1} از ۱۰`);
+      } else if (target === "archive") {
+        screenArchive.classList.add("active");
+        tabBtnWizard.setAttribute("aria-selected", "false");
+        tabBtnArchive.setAttribute("aria-selected", "true");
+        renderArchiveList();
+        announce("وارد منوی آرشیو کارت‌ها شدید");
+      } else if (target === "reader") {
+        screenReader.classList.add("active");
+        tabBtnWizard.setAttribute("aria-selected", "false");
+        tabBtnArchive.setAttribute("aria-selected", "false");
+      }
+    }
+
+    tabBtnWizard.addEventListener("click", () => switchView("wizard"));
+    tabBtnArchive.addEventListener("click", () => switchView("archive"));
+
+    /* =====================================================================
+       ۸. ایجاد چک‌باکس‌های مرحله ۳ (طرح‌واره‌های ۱۸گانه)
+       ===================================================================== */
+    const schemasOptionsList = document.getElementById("schemas-options-list");
+    const schemasSelectedCount = document.getElementById("schemas-selected-count");
+
+    function renderSchemaCheckboxes() {
+      schemasOptionsList.innerHTML = "";
+      SCHEMA_ITEMS.forEach((schema, idx) => {
+        const id = `cb-schema-${idx}`;
+        const label = document.createElement("label");
+        label.className = "schema-item-label";
+        label.htmlFor = id;
+
+        const input = document.createElement("input");
+        input.type = "checkbox";
+        input.id = id;
+        input.value = schema.name;
+        input.className = "schema-checkbox";
+
+        const currentSelected = Array.isArray(answers[2]) ? answers[2] : [];
+        if (currentSelected.includes(schema.name)) {
+          input.checked = true;
+        }
+
+        input.addEventListener("change", () => {
+          vibrateBrief();
+          updateSelectedSchemasFromUI();
+        });
+
+        const info = document.createElement("div");
+        info.className = "schema-info-text";
+
+        const titleFa = document.createElement("span");
+        titleFa.className = "schema-title-fa";
+        titleFa.textContent = `${idx + 1}. ${schema.name}`;
+
+        const titleEn = document.createElement("span");
+        titleEn.className = "schema-title-en";
+        titleEn.textContent = `(${schema.en})`;
+
+        info.appendChild(titleFa);
+        info.appendChild(titleEn);
+
+        label.appendChild(input);
+        label.appendChild(info);
+
+        schemasOptionsList.appendChild(label);
+      });
+      updateSelectedSchemasCounter();
+    }
+
+    function updateSelectedSchemasFromUI() {
+      const checkedInputs = schemasOptionsList.querySelectorAll("input.schema-checkbox:checked");
+      const selected = Array.from(checkedInputs).map(cb => cb.value);
+      answers[2] = selected;
+      saveDraft(currentStep, answers);
+      updateSelectedSchemasCounter();
+    }
+
+    function updateSelectedSchemasCounter() {
+      const selected = Array.isArray(answers[2]) ? answers[2] : [];
+      const count = selected.length;
+      if (schemasSelectedCount) {
+        schemasSelectedCount.textContent = `${count} طرح‌واره انتخاب شده است`;
+      }
+    }
+
+    document.getElementById("btn-select-all-schemas").addEventListener("click", () => {
+      answers[2] = SCHEMA_ITEMS.map(s => s.name);
+      renderSchemaCheckboxes();
+      saveDraft(currentStep, answers);
+      announce("تمام طرح‌واره‌ها انتخاب شدند");
+    });
+
+    document.getElementById("btn-clear-all-schemas").addEventListener("click", () => {
+      answers[2] = [];
+      renderSchemaCheckboxes();
+      saveDraft(currentStep, answers);
+      announce("انتخاب طرح‌واره‌ها پاک شد");
+    });
+
+    /* =====================================================================
+       ۹. مدیریت ویزارد مراحل ۱۰ گانه
+       ===================================================================== */
+    const stepCounterLabel = document.getElementById("step-counter-label");
+    const sectionBadgeLabel = document.getElementById("section-badge-label");
+    const progressFillBar = document.getElementById("progress-fill-bar");
+    const progressBarElement = document.getElementById("progress-bar-element");
+    const questionHeading = document.getElementById("question-heading");
+    const questionNumberSymbol = document.getElementById("question-number-symbol");
+    const questionTitleText = document.getElementById("question-title-text");
+    const questionPromptText = document.getElementById("question-prompt-text");
+    const questionHintText = document.getElementById("question-hint-text");
+    const textInputGroup = document.getElementById("text-input-group");
+    const schemaCheckboxesGroup = document.getElementById("schema-checkboxes-group");
+    const stepTextInput = document.getElementById("step-text-input");
+    const btnWizardPrev = document.getElementById("btn-wizard-prev");
+    const btnWizardNext = document.getElementById("btn-wizard-next");
+    const completionSummaryCard = document.getElementById("completion-summary-card");
+
+    function renderCurrentStep() {
+      const q = QUESTIONS[currentStep];
+
+      // اطلاعات نوار پیشرفت
+      stepCounterLabel.textContent = `مرحله ${currentStep + 1} از ۱۰`;
+      sectionBadgeLabel.textContent = q.section;
+      const progressPercent = ((currentStep + 1) / 10) * 100;
+      progressFillBar.style.width = `${progressPercent}%`;
+      progressBarElement.setAttribute("aria-valuenow", currentStep + 1);
+
+      // متن سوال
+      questionNumberSymbol.textContent = `${currentStep + 1}.`;
+      questionTitleText.textContent = q.title.replace(/^\d+\.\s*/, '');
+      questionPromptText.textContent = q.prompt;
+      questionHintText.textContent = q.hint;
+
+      // نوع ورودی
+      if (q.type === "checkboxes") {
+        textInputGroup.style.display = "none";
+        schemaCheckboxesGroup.style.display = "block";
+        renderSchemaCheckboxes();
+      } else {
+        schemaCheckboxesGroup.style.display = "none";
+        textInputGroup.style.display = "block";
+        stepTextInput.value = (answers[currentStep] && typeof answers[currentStep] === "string") ? answers[currentStep] : "";
+        stepTextInput.placeholder = `پاسخ شما برای: ${q.title}`;
+      }
+
+      // وضعیت دکمه قبلی
+      btnWizardPrev.disabled = (currentStep === 0);
+
+      // دکمه بعدی / پایان
+      if (currentStep === 9) {
+        btnWizardNext.innerHTML = `<span>پایان و ذخیره در آرشیو</span> <span aria-hidden="true">💾</span>`;
+        btnWizardNext.className = "btn btn-success";
+      } else {
+        btnWizardNext.innerHTML = `<span>مرحله بعدی</span> <span aria-hidden="true">➡️</span>`;
+        btnWizardNext.className = "btn btn-primary";
+      }
+
+      completionSummaryCard.style.display = "none";
+
+      // اعلان به TalkBack و قرار دادن فوکوس
+      setTimeout(() => {
+        questionHeading.focus();
+        announce(`مرحله ${currentStep + 1} از ۱۰: ${q.title}. ${q.prompt}`);
+      }, 100);
+    }
+
+    function saveCurrentStepAnswer() {
+      try {
+        const q = QUESTIONS[currentStep];
+        if (q && q.type === "text") {
+          answers[currentStep] = stepTextInput.value;
+        }
+        saveDraft(currentStep, answers);
+      } catch (err) {
+        console.error("Error saving step answer", err);
+      }
+    }
+
+    function goNextStep() {
+      try {
+        saveCurrentStepAnswer();
+        vibrateBrief();
+
+        if (currentStep < 9) {
+          currentStep++;
+          renderCurrentStep();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          // پایان مرحله ۱۰ و ذخیره کارت
+          finishAndSaveCard();
+        }
+      } catch (err) {
+        console.error("Error navigating next", err);
+      }
+    }
+
+    function goPrevStep() {
+      try {
+        if (currentStep > 0) {
+          saveCurrentStepAnswer();
+          vibrateBrief();
+          currentStep--;
+          renderCurrentStep();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      } catch (err) {
+        console.error("Error navigating prev", err);
+      }
+    }
+
+    btnWizardNext.addEventListener("click", goNextStep);
+    btnWizardPrev.addEventListener("click", goPrevStep);
+
+    // پشتیبانی از کلید Ctrl + Enter
+    window.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.key === "Enter") {
+        if (screenWizard.classList.contains("active") && completionSummaryCard.style.display === "none") {
+          e.preventDefault();
+          goNextStep();
+        }
+      }
+    });
+
+    /* =====================================================================
+       ۱۰. ذخیره‌سازی نهایی کارت در آرشیو
+       ===================================================================== */
+    let lastSavedCardObj = null;
+
+    function finishAndSaveCard() {
+      const { dateStr, fileTag, timestamp } = getPersianDateTime();
+
+      // نام طرح‌واره‌ها برای نام فایل
+      const schemaVal = answers[2];
+      let schemaList = [];
+      if (Array.isArray(schemaVal)) {
+        schemaList = schemaVal.filter(s => s && s.trim());
+      } else if (schemaVal && typeof schemaVal === "string") {
+        schemaList = [schemaVal.trim()];
+      }
+      if (schemaList.length === 0) {
+        schemaList = ["طرحواره"];
+      }
+
+      const forbiddenChars = /[\\/:*?"<>|\r\n\t]/g;
+      const cleanSchemas = schemaList.map(s => s.replace(/\//g, ' ').replace(forbiddenChars, '').replace(/\s+/g, ' ').trim()).filter(Boolean);
+      const schemaTag = cleanSchemas.join("-") || "طرحواره";
+      const filename = `کارت_${fileTag}_${schemaTag}.txt`;
+
+      const fullText = formatCardFullText(answers, dateStr);
+
+      const cardObj = {
+        id: `card_${timestamp}`,
+        timestamp,
+        dateStr,
+        fileTag,
+        schemas: schemaList,
+        answers: [...answers],
+        fullText,
+        filename
+      };
+
+      const cards = loadSavedCards();
+      cards.unshift(cardObj); // افزودن به ابتدای لیست (جدیدترین به قدیمی‌ترین)
+      saveAllCards(cards);
+      clearDraft();
+      updateArchiveBadge();
+
+      lastSavedCardObj = cardObj;
+
+      // نمایش صفحه موفقیت
+      completionSummaryCard.style.display = "block";
+      document.getElementById("completion-time-desc").textContent = `ثبت شده در: ${dateStr} - ذخیره شده به نام: ${filename}`;
+      
+      // پنهان کردن کادر سوال
+      document.getElementById("question-container").style.display = "none";
+      document.querySelector(".wizard-actions").style.display = "none";
+      document.querySelector(".shortcut-tip").style.display = "none";
+
+      announce("تبریک! کارت مقابله‌ای با موفقیت در آرشیو گوشی شما ذخیره شد.");
+      document.getElementById("btn-goto-reader-now").focus();
+    }
+
+    /* کلیدهای صفحه موفقیت */
+    document.getElementById("btn-goto-reader-now").addEventListener("click", () => {
+      if (lastSavedCardObj) {
+        openCardInReader(lastSavedCardObj);
+      }
+    });
+
+    document.getElementById("btn-share-new-card").addEventListener("click", () => {
+      if (lastSavedCardObj) shareCard(lastSavedCardObj);
+    });
+
+    document.getElementById("btn-download-new-card").addEventListener("click", () => {
+      if (lastSavedCardObj) downloadCardTxt(lastSavedCardObj);
+    });
+
+    document.getElementById("btn-start-another-card").addEventListener("click", () => {
+      resetWizardForNewCard();
+    });
+
+    function resetWizardForNewCard() {
+      currentStep = 0;
+      answers = ["", "", [], "", "", "", "", "", "", ""];
+      clearDraft();
+
+      document.getElementById("question-container").style.display = "block";
+      document.querySelector(".wizard-actions").style.display = "flex";
+      document.querySelector(".shortcut-tip").style.display = "block";
+      completionSummaryCard.style.display = "none";
+
+      renderCurrentStep();
+    }
+
+    /* =====================================================================
+       ۱۱. مدیریت آرشیو کارت‌ها (منوی داخلی)
+       ===================================================================== */
+    const savedCardsList = document.getElementById("saved-cards-list");
+    const archiveEmptyView = document.getElementById("archive-empty-view");
+    const archiveSearchBox = document.getElementById("archive-search-box");
+
+    function updateBatchBar() {
+      const batchBar = document.getElementById("batch-actions-bar");
+      const countLabel = document.getElementById("batch-selected-count-label");
+      const shareText = document.getElementById("btn-batch-share-text");
+      const deleteText = document.getElementById("btn-batch-delete-text");
+
+      if (!batchBar) return;
+      const count = selectedCards.size;
+      if (count > 0) {
+        batchBar.style.display = "block";
+        if (countLabel) countLabel.textContent = `${count} کارت انتخاب شده است`;
+        if (shareText) shareText.textContent = `اشتراک‌گذاری همزمان (${count})`;
+        if (deleteText) deleteText.textContent = `حذف همزمان (${count})`;
+      } else {
+        batchBar.style.display = "none";
+      }
+    }
+
+    function renderArchiveList() {
+      const cards = loadSavedCards();
+      updateArchiveBadge();
+
+      // حذف شناسه‌های کارتی که دیگر وجود ندارند
+      const allCardIds = new Set(cards.map(c => c.id));
+      for (const id of selectedCards) {
+        if (!allCardIds.has(id)) {
+          selectedCards.delete(id);
+        }
+      }
+      updateBatchBar();
+
+      const query = (archiveSearchBox.value || "").trim().toLowerCase();
+
+      const filteredCards = cards.filter(card => {
+        if (!query) return true;
+        const inDate = card.dateStr.toLowerCase().includes(query);
+        const inSchemas = (card.schemas || []).some(s => s.toLowerCase().includes(query));
+        const inAnswers = (card.answers || []).some(a => {
+          if (Array.isArray(a)) return a.join(" ").toLowerCase().includes(query);
+          return String(a).toLowerCase().includes(query);
+        });
+        return inDate || inSchemas || inAnswers;
+      });
+
+      savedCardsList.innerHTML = "";
+
+      if (filteredCards.length === 0) {
+        archiveEmptyView.style.display = "block";
+        if (query) {
+          archiveEmptyView.querySelector("h3").textContent = "موردی با این عبارت یافت نشد";
+          archiveEmptyView.querySelector("p").textContent = "عبارت دیگری را جستجو کنید یا کادر جستجو را پاک نمایید.";
+        } else {
+          archiveEmptyView.querySelector("h3").textContent = "هنوز کارتی ثبت نشده است";
+          archiveEmptyView.querySelector("p").textContent = "هر کارتی که پر کنید به صورت خودکار در این منو ذخیره و نگهداری می‌شود.";
+        }
+        return;
+      }
+
+      archiveEmptyView.style.display = "none";
+
+      filteredCards.forEach((card, index) => {
+        const li = document.createElement("li");
+        li.className = "card-entry-container";
+
+        const article = document.createElement("article");
+        article.className = "card-entry";
+        if (selectedCards.has(card.id)) {
+          article.classList.add("is-selected");
+        }
+        article.setAttribute("aria-labelledby", `card-title-${card.id}`);
+
+        // هدر کارت شامل چک‌باکس انتخاب و تاریخ
+        const header = document.createElement("div");
+        header.className = "card-entry-header";
+
+        const headerMain = document.createElement("div");
+        headerMain.className = "card-header-main";
+
+        const selectWrap = document.createElement("div");
+        selectWrap.className = "card-select-wrap";
+
+        const cbSelect = document.createElement("input");
+        cbSelect.type = "checkbox";
+        cbSelect.id = `cb-select-${card.id}`;
+        cbSelect.className = "card-select-checkbox";
+        cbSelect.checked = selectedCards.has(card.id);
+        cbSelect.setAttribute("aria-label", `انتخاب کارت تاریخ ${card.dateStr}`);
+
+        const cbLabel = document.createElement("label");
+        cbLabel.htmlFor = `cb-select-${card.id}`;
+        cbLabel.className = "card-select-label";
+        cbLabel.textContent = "انتخاب";
+
+        cbSelect.addEventListener("change", () => {
+          vibrateBrief();
+          if (cbSelect.checked) {
+            selectedCards.add(card.id);
+            article.classList.add("is-selected");
+            announce(`کارت تاریخ ${card.dateStr} انتخاب شد. در مجموع ${selectedCards.size} کارت انتخاب شده است.`);
+          } else {
+            selectedCards.delete(card.id);
+            article.classList.remove("is-selected");
+            announce(`انتخاب کارت تاریخ ${card.dateStr} لغو شد. در مجموع ${selectedCards.size} کارت انتخاب شده است.`);
+          }
+          updateBatchBar();
+        });
+
+        selectWrap.appendChild(cbSelect);
+        selectWrap.appendChild(cbLabel);
+
+        const title = document.createElement("h3");
+        title.id = `card-title-${card.id}`;
+        title.className = "card-entry-date";
+        title.textContent = card.dateStr;
+
+        headerMain.appendChild(selectWrap);
+        headerMain.appendChild(title);
+        header.appendChild(headerMain);
+
+        // برچسب طرح‌واره‌ها
+        const tagsContainer = document.createElement("div");
+        tagsContainer.className = "card-schemas-tags";
+        const schemas = Array.isArray(card.schemas) ? card.schemas : [card.schemas || "طرح‌واره"];
+        schemas.forEach(s => {
+          const span = document.createElement("span");
+          span.className = "schema-tag";
+          span.textContent = s;
+          tagsContainer.appendChild(span);
+        });
+
+        // پیش‌نمایش احساس و موقعیت
+        const preview = document.createElement("p");
+        preview.className = "card-preview-text";
+        const feeling = (card.answers && card.answers[0]) ? card.answers[0] : "(بدون احساس)";
+        const trigger = (card.answers && card.answers[1]) ? card.answers[1] : "(بدون موقعیت)";
+        preview.textContent = `احساس: ${feeling.slice(0, 70)}... | محرک: ${trigger.slice(0, 70)}...`;
+
+        // دکمه‌های اقدام روی کارت
+        const actions = document.createElement("div");
+        actions.className = "card-entry-actions";
+
+        // ۱. خواندن متن کامل کارت (دکمه اصلی)
+        const btnRead = document.createElement("button");
+        btnRead.type = "button";
+        btnRead.className = "btn btn-read";
+        btnRead.innerHTML = `<span aria-hidden="true">📖</span> <span>خواندن متن کارت</span>`;
+        btnRead.setAttribute("aria-label", `خواندن متن کامل کارت تاریخ ${card.dateStr}`);
+        btnRead.addEventListener("click", () => openCardInReader(card));
+
+        // ۲. دانلود فایل متنی (.txt)
+        const btnDl = document.createElement("button");
+        btnDl.type = "button";
+        btnDl.className = "btn btn-secondary";
+        btnDl.innerHTML = `<span aria-hidden="true">💾</span> <span>دانلود .txt</span>`;
+        btnDl.setAttribute("aria-label", `دانلود فایل متنی کارت ${card.dateStr}`);
+        btnDl.addEventListener("click", () => downloadCardTxt(card));
+
+        // ۳. اشتراک‌گذاری
+        const btnShare = document.createElement("button");
+        btnShare.type = "button";
+        btnShare.className = "btn btn-secondary";
+        btnShare.innerHTML = `<span aria-hidden="true">📤</span> <span>اشتراک‌گذاری</span>`;
+        btnShare.setAttribute("aria-label", `اشتراک‌گذاری کارت ${card.dateStr}`);
+        btnShare.addEventListener("click", () => shareCard(card));
+
+        // ۴. کپی متن
+        const btnCopy = document.createElement("button");
+        btnCopy.type = "button";
+        btnCopy.className = "btn btn-secondary";
+        btnCopy.innerHTML = `<span aria-hidden="true">📋</span> <span>کپی متن</span>`;
+        btnCopy.setAttribute("aria-label", `کپی متن کارت ${card.dateStr}`);
+        btnCopy.addEventListener("click", () => copyCardText(card));
+
+        // ۵. حذف کارت
+        const btnDel = document.createElement("button");
+        btnDel.type = "button";
+        btnDel.className = "btn btn-danger";
+        btnDel.innerHTML = `<span aria-hidden="true">🗑️</span> <span>حذف</span>`;
+        btnDel.setAttribute("aria-label", `حذف کارت تاریخ ${card.dateStr}`);
+        btnDel.addEventListener("click", () => requestDeleteCard(card.id, card.dateStr));
+
+        actions.appendChild(btnRead);
+        actions.appendChild(btnDl);
+        actions.appendChild(btnShare);
+        actions.appendChild(btnCopy);
+        actions.appendChild(btnDel);
+
+        article.appendChild(header);
+        article.appendChild(tagsContainer);
+        article.appendChild(preview);
+        article.appendChild(actions);
+
+        li.appendChild(article);
+        savedCardsList.appendChild(li);
+      });
+    }
+
+    archiveSearchBox.addEventListener("input", () => {
+      renderArchiveList();
+    });
+
+    document.getElementById("btn-archive-new-card").addEventListener("click", () => {
+      resetWizardForNewCard();
+      switchView("wizard");
+    });
+
+    document.getElementById("btn-empty-start").addEventListener("click", () => {
+      resetWizardForNewCard();
+      switchView("wizard");
+    });
+
+    // عملیات گروهی روی کارت‌های انتخاب‌شده
+    document.getElementById("btn-batch-select-all").addEventListener("click", () => {
+      const cards = loadSavedCards();
+      const query = (archiveSearchBox.value || "").trim().toLowerCase();
+      const filteredCards = cards.filter(card => {
+        if (!query) return true;
+        const inDate = card.dateStr.toLowerCase().includes(query);
+        const inSchemas = (card.schemas || []).some(s => s.toLowerCase().includes(query));
+        const inAnswers = (card.answers || []).some(a => {
+          if (Array.isArray(a)) return a.join(" ").toLowerCase().includes(query);
+          return String(a).toLowerCase().includes(query);
+        });
+        return inDate || inSchemas || inAnswers;
+      });
+
+      filteredCards.forEach(c => selectedCards.add(c.id));
+      renderArchiveList();
+      announce(`تمام کارت‌های نمایش‌داده‌شده انتخاب شدند (${selectedCards.size} کارت).`);
+    });
+
+    document.getElementById("btn-batch-deselect-all").addEventListener("click", () => {
+      selectedCards.clear();
+      renderArchiveList();
+      announce("انتخاب تمام کارت‌ها لغو شد.");
+    });
+
+    document.getElementById("btn-batch-share").addEventListener("click", () => {
+      requestBatchShare();
+    });
+
+    document.getElementById("btn-batch-delete").addEventListener("click", () => {
+      requestBatchDelete();
+    });
+
+    async function requestBatchShare() {
+      if (selectedCards.size === 0) {
+        announce("هیچ کارتی برای اشتراک‌گذاری انتخاب نشده است.");
+        return;
+      }
+      const allCards = loadSavedCards();
+      const targetCards = allCards.filter(c => selectedCards.has(c.id));
+      if (targetCards.length === 0) return;
+
+      const { dateStr } = getPersianDateTime();
+      let combined = `======================================================================\n` +
+                     `            مجموعه کارت‌های مقابله‌ای طرح‌واره (${targetCards.length} کارت انتخاب‌شده)\n` +
+                     `زمان استخراج: ${dateStr}\n` +
+                     `======================================================================\n\n`;
+
+      targetCards.forEach((c, idx) => {
+        combined += `----------------------------------------------------------------------\n` +
+                    `کارت شماره ${idx + 1} از ${targetCards.length} - ${c.dateStr}\n` +
+                    `طرح‌واره‌های فعال: ${(c.schemas || []).join("، ")}\n` +
+                    `----------------------------------------------------------------------\n\n` +
+                    `${c.fullText || formatCardFullText(c.answers, c.dateStr)}\n\n\n`;
+      });
+
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: `مجموعه کارت‌های طرح‌واره (${targetCards.length} کارت)`,
+            text: combined
+          });
+          announce(`${targetCards.length} کارت با موفقیت به اشتراک گذاشته شد.`);
+        } catch (err) {
+          if (err.name !== "AbortError") {
+            copyCardText({ fullText: combined, answers: [], dateStr });
+            announce(`متن کامل ${targetCards.length} کارت در کلیپ‌بورد کپی شد.`);
+          }
+        }
+      } else {
+        copyCardText({ fullText: combined, answers: [], dateStr });
+        announce(`متن کامل ${targetCards.length} کارت در کلیپ‌بورد کپی شد.`);
+      }
+    }
+
+    function requestBatchDelete() {
+      if (selectedCards.size === 0) {
+        announce("هیچ کارتی برای حذف انتخاب نشده است.");
+        return;
+      }
+      isBatchDeleteMode = true;
+      cardToDeleteId = null;
+      document.getElementById("modal-delete-title").textContent = "حذف همزمان کارت‌ها";
+      modalDeleteBody.textContent = `آیا از حذف همزمان ${selectedCards.size} کارت انتخاب‌شده اطمینان دارید؟ این عمل غیرقابل بازگشت است.`;
+      btnConfirmDelete.textContent = `بله، ${selectedCards.size} کارت حذف شوند`;
+      deleteModal.classList.add("active");
+      btnCancelDelete.focus();
+    }
+
+    /* =====================================================================
+       ۱۲. نمای خواندن کارت (Reader View)
+       ===================================================================== */
+    const readerMetaDate = document.getElementById("reader-meta-date");
+    const readerMetaSchemas = document.getElementById("reader-meta-schemas");
+    const readerRawNotepad = document.getElementById("reader-raw-notepad");
+
+    function openCardInReader(card) {
+      currentViewingCard = card;
+      readerMetaDate.textContent = card.dateStr;
+
+      // برچسب طرح‌واره‌ها
+      readerMetaSchemas.innerHTML = "";
+      const schemas = Array.isArray(card.schemas) ? card.schemas : [card.schemas || "طرح‌واره"];
+      schemas.forEach(s => {
+        const span = document.createElement("span");
+        span.className = "schema-tag";
+        span.textContent = s;
+        readerMetaSchemas.appendChild(span);
+      });
+
+      // پر کردن پاسخ‌های ۱۰ گانه در ۴ بخش
+      const ans = card.answers || [];
+      for (let i = 0; i < 10; i++) {
+        const el = document.getElementById(`reader-ans-${i}`);
+        if (el) {
+          if (i === 2) {
+            const val = Array.isArray(ans[2]) ? ans[2].join("، ") : (ans[2] || "(خالی)");
+            el.textContent = val;
+          } else {
+            el.textContent = ans[i] || "(خالی)";
+          }
+        }
+      }
+
+      // متن کامل نوت‌پد
+      readerRawNotepad.textContent = card.fullText || formatCardFullText(card.answers, card.dateStr);
+
+      switchView("reader");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        readerMetaDate.focus();
+        announce(`نمای مطالعه کارت تاریخ ${card.dateStr}`);
+      }, 100);
+    }
+
+    function returnToArchive() {
+      switchView("archive");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.getElementById("btn-reader-back").addEventListener("click", returnToArchive);
+    document.getElementById("btn-reader-back-bottom").addEventListener("click", returnToArchive);
+
+    document.getElementById("btn-reader-share").addEventListener("click", () => {
+      if (currentViewingCard) shareCard(currentViewingCard);
+    });
+
+    document.getElementById("btn-reader-download").addEventListener("click", () => {
+      if (currentViewingCard) downloadCardTxt(currentViewingCard);
+    });
+
+    document.getElementById("btn-reader-copy").addEventListener("click", () => {
+      if (currentViewingCard) copyCardText(currentViewingCard);
+    });
+
+    /* =====================================================================
+       ۱۳. توابع اشتراک‌گذاری، دانلود و کپی متن
+       ===================================================================== */
+    function downloadCardTxt(card) {
+      const filename = card.filename || `کارت_${card.fileTag || "طرحواره"}.txt`;
+      const content = card.fullText || formatCardFullText(card.answers, card.dateStr);
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      announce(`فایل متنی ${filename} دانلود شد`);
+    }
+
+    async function shareCard(card) {
+      const filename = card.filename || `کارت_${card.fileTag || "طرحواره"}.txt`;
+      const content = card.fullText || formatCardFullText(card.answers, card.dateStr);
+
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: `کارت مقابله‌ای طرح‌واره - ${card.dateStr}`,
+            text: content
+          });
+          announce("کارت با موفقیت به اشتراک گذاشته شد");
+        } catch (err) {
+          if (err.name !== "AbortError") {
+            copyCardText(card);
+          }
+        }
+      } else {
+        copyCardText(card);
+      }
+    }
+
+    function copyCardText(card) {
+      const content = card.fullText || formatCardFullText(card.answers, card.dateStr);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(content).then(() => {
+          announce("متن کامل کارت در کلیپ‌بورد کپی شد");
+        }).catch(() => {
+          fallbackCopyText(content);
+        });
+      } else {
+        fallbackCopyText(content);
+      }
+    }
+
+    function fallbackCopyText(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.left = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand("copy");
+        announce("متن کامل کارت کپی شد");
+      } catch (err) {
+        announce("کپی متن با خطا مواجه شد");
+      }
+      document.body.removeChild(textArea);
+    }
+
+    /* =====================================================================
+       ۱۴. مدیریت حذف کارت با تأییدیه
+       ===================================================================== */
+    const deleteModal = document.getElementById("delete-modal");
+    const modalDeleteBody = document.getElementById("modal-delete-body");
+    const btnCancelDelete = document.getElementById("btn-cancel-delete");
+    const btnConfirmDelete = document.getElementById("btn-confirm-delete");
+
+    function requestDeleteCard(cardId, cardDate) {
+      isBatchDeleteMode = false;
+      cardToDeleteId = cardId;
+      document.getElementById("modal-delete-title").textContent = "حذف کارت مقابله‌ای";
+      btnConfirmDelete.textContent = "بله، حذف شود";
+      modalDeleteBody.textContent = `آیا از حذف کارت مورخ «${cardDate}» اطمینان دارید؟`;
+      deleteModal.classList.add("active");
+      btnCancelDelete.focus();
+    }
+
+    btnCancelDelete.addEventListener("click", () => {
+      cardToDeleteId = null;
+      isBatchDeleteMode = false;
+      btnConfirmDelete.textContent = "بله، حذف شود";
+      document.getElementById("modal-delete-title").textContent = "حذف کارت مقابله‌ای";
+      deleteModal.classList.remove("active");
+    });
+
+    btnConfirmDelete.addEventListener("click", () => {
+      if (isBatchDeleteMode) {
+        let cards = loadSavedCards();
+        const countDeleted = selectedCards.size;
+        cards = cards.filter(c => !selectedCards.has(c.id));
+        saveAllCards(cards);
+        selectedCards.clear();
+        isBatchDeleteMode = false;
+        deleteModal.classList.remove("active");
+        btnConfirmDelete.textContent = "بله، حذف شود";
+        document.getElementById("modal-delete-title").textContent = "حذف کارت مقابله‌ای";
+        renderArchiveList();
+        updateArchiveBadge();
+        announce(`${countDeleted} کارت با موفقیت حذف شدند`);
+      } else if (cardToDeleteId) {
+        let cards = loadSavedCards();
+        cards = cards.filter(c => c.id !== cardToDeleteId);
+        saveAllCards(cards);
+        selectedCards.delete(cardToDeleteId);
+        deleteModal.classList.remove("active");
+        cardToDeleteId = null;
+        renderArchiveList();
+        updateArchiveBadge();
+        announce("کارت مورد نظر حذف شد");
+        if (screenReader.classList.contains("active")) {
+          switchView("archive");
+        }
+      }
+    });
+
+    /* =====================================================================
+       ۱۵. پشتیبان‌گیری و بازیابی داده‌ها (Backup / Restore)
+       ===================================================================== */
+    const btnExportBackup = document.getElementById("btn-export-backup");
+    const btnTriggerImport = document.getElementById("btn-trigger-import");
+    const backupFileInput = document.getElementById("backup-file-input");
+
+    btnExportBackup.addEventListener("click", () => {
+      const cards = loadSavedCards();
+      if (cards.length === 0) {
+        announce("کارتی در آرشیو برای پشتیبان‌گیری وجود ندارد");
+        return;
+      }
+      const dataStr = JSON.stringify(cards, null, 2);
+      const blob = new Blob([dataStr], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      const { fileTag } = getPersianDateTime();
+      a.href = url;
+      a.download = `پشتیبان_کارت_های_طرحواره_${fileTag}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      announce("فایل پشتیبان کامل از تمامی کارت‌ها دانلود شد");
+    });
+
+    btnTriggerImport.addEventListener("click", () => {
+      backupFileInput.click();
+    });
+
+    backupFileInput.addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const importedCards = JSON.parse(event.target.result);
+          if (Array.isArray(importedCards)) {
+            const existingCards = loadSavedCards();
+            // ادغام بر اساس id
+            const existingIds = new Set(existingCards.map(c => c.id));
+            let addedCount = 0;
+            importedCards.forEach(card => {
+              if (card && card.id && !existingIds.has(card.id)) {
+                existingCards.push(card);
+                addedCount++;
+              }
+            });
+            // مرتب‌سازی بر اساس زمان (جدیدترین به قدیمی‌ترین)
+            existingCards.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            saveAllCards(existingCards);
+            renderArchiveList();
+            updateArchiveBadge();
+            announce(`${addedCount} کارت از فایل پشتیبان به آرشیو افزوده شد`);
+          } else {
+            announce("قالب فایل نامعتبر است");
+          }
+        } catch (err) {
+          announce("خطا در خواندن فایل پشتیبان");
+        }
+        backupFileInput.value = "";
+      };
+      reader.readAsText(file);
+    });
+
+    /* =====================================================================
+       ۱۶. ثبت Service Worker برای کارکرد ۱۰۰٪ آفلاین
+       ===================================================================== */
+    if ('serviceWorker' in navigator && (location.protocol === 'http:' || location.protocol === 'https:')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then((reg) => {
+          console.log('ServiceWorker registered:', reg.scope);
+        }).catch((err) => {
+          console.log('ServiceWorker registration failed:', err);
+        });
+      });
+    }
+
+    /* =====================================================================
+       ۱۷. آغاز برنامه و بازیابی پیش‌نویس ناتمام در صورت وجود
+       ===================================================================== */
+    initTheme();
+    updateArchiveBadge();
+
+    const draft = loadDraft();
+    if (draft && Array.isArray(draft.answers)) {
+      answers = draft.answers;
+      currentStep = (typeof draft.stepIndex === "number" && draft.stepIndex >= 0 && draft.stepIndex < 10) ? draft.stepIndex : 0;
+    }
+
+    renderCurrentStep();
+  </script>
+</body>
+</html>
